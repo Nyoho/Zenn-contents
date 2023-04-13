@@ -5,7 +5,9 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["emacs", "treesitter", "TypeScript"]
 published: true
 ---
-Emacsでtsxを編集するときのいい設定がないなあないなあと思って、長年いろいろ模索 (typescript-mode に rjsx-minor-mode を併用して `(define-derived-mode typescript-tsx-mode typescript-mode "TSX")` して `(typescript-tsx-mode-map  ("<" . rjsx-electric-lt) (">" . rjsx-electric-gt))` したり)やっていたんですが、**Emacs 29からならtree-sitterで設定できそう** だとわかったのでメモします。
+Emacsでtsxを編集するときのいい設定がないなあないなあと思って、長年いろいろ模索 (typescript-mode に rjsx-minor-mode を併用して `(define-derived-mode typescript-tsx-mode typescript-mode "TSX")` して `(typescript-tsx-mode-map  ("<" . rjsx-electric-lt) (">" . rjsx-electric-gt))` したり)やっていたんですが、どうもインデントとかがおかしくなりがちでした。
+
+ここにきて **Emacs 29からならtree-sitterで設定できそう** だとわかったのでメモします。
 
 
 ## 手順
