@@ -1,6 +1,6 @@
 ---
 title: "Emacs 29でTree-sitterでtsxの設定をする"
-emoji: "🐕"
+emoji: "🌲"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["emacs", "treesitter", "TypeScript"]
 published: true
