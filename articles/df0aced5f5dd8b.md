@@ -3,7 +3,7 @@ title: "Emacs 29でTree-sitterでtsxの設定をする"
 emoji: "🐕"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["emacs", "treesitter", "TypeScript"]
-published: false
+published: true
 ---
 Emacsでtsxを編集するときのいい設定がないなあないなあと思って、長年いろいろ模索 (typescript-mode に rjsx-minor-mode を併用して `(define-derived-mode typescript-tsx-mode typescript-mode "TSX")` して `(typescript-tsx-mode-map  ("<" . rjsx-electric-lt) (">" . rjsx-electric-gt))` したり)やっていたんですが、**Emacs 29からならtree-sitterで設定できそう** だとわかったのでメモします。
 
@@ -83,3 +83,9 @@ mv できたもの ~/.emacs.d/tree-sitter/
 
 おかしいところや改善点がありましたらどうかお教え下さい。ありがとうございます in advance。
 
+
+## 追記: tree-sitter-module の入れ方
+
+tree-sitter-module を入れるときは、わざわざEmacsのソースを持って来なくても https://github.com/casouri/tree-sitter-module/releases から取ってきたり https://github.com/casouri/tree-sitter-module/ を取ってきて自分で `./batch.sh` でビルドしてもいいようです。
+
+参考文献: https://git.savannah.gnu.org/cgit/emacs.git/tree/admin/notes/tree-sitter/starter-guide
