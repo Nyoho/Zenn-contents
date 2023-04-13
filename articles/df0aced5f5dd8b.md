@@ -39,6 +39,8 @@ mv できたもの ~/.emacs.d/tree-sitter/
 
 あとはEmacsの設定です。Leafを使った例です。
 
+tree-sitterでtsxが使えるようになっているので、拡張子が tsx のときに tsx-ts-mode を使うようにしているところがポイントです。
+
 ```emacs-lisp
 (leaf tree-sitter
   :ensure (t tree-sitter-langs)
